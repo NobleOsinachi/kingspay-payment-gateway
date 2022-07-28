@@ -1,0 +1,41 @@
+{
+  "name": "kc-test",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "devDependencies": {
+        "kingschat-web-sdk": "^0.1.0"
+      }
+    },
+    "node_modules/kingschat-web-sdk": {
+      "version": "0.1.0",
+      "resolved": "https://registry.npmjs.org/kingschat-web-sdk/-/kingschat-web-sdk-0.1.0.tgz",
+      "integrity": "sha512-+4+uQw2IZdDCiIoqMBQ/LwgqiBhn6dY6bCmHO5ZlT4wA/y2udKMQCo4ha/84Et3Dz3d9T6ScSYIfccvqpFQR4g==",
+      "dev": true
+    }
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "kingschat-web-sdk": "0.1.0"
+  },
+  "devDependencies": {
+    "kingschat-web-sdk": "^0.1.0"
+  },
+  "scripts": {
+    "start": "npm app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NobleOsinachi/kc-test.git"
+  },
+  "author": "Noble Osinachi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NobleOsinachi/kc-test/issues"
+  },
+  "homepage": "https://github.com/NobleOsinachi/kc-test#readme"
+}
