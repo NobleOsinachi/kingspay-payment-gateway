@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/kingschat-web-sdk/dist/stylesheets/style.min.css" />
+</head>
+
+<body>
+
+
+    <button id="clickMe">
+        CLICK ME
+    </button>
+
+    <code class="response">
+
+
+</code>
+
+
+
+    <script src="./jquery.js"></script>
+
+
+    <script>
+
+        $( "#clickMe" ).on( "click", function () {
+            $( document ).ready( function () {
+
+
+
+                $.ajax( {
+                    url: "https://api.kingspay-gs.com/api/payment/initialize",
+                    method: "POST",
+                    contentType: "application/json",
+
+                    headers: {
+                        "Authorization": "Bearer sk_hiXIQ78vbeTRoTsvTjJnwWauR0FBVF"
+                    },
+                    data: JSON.stringify( {
+                        amount: "1000", // replace with the actual amount in KOBE/CENTS
+                        currency: "NGN", // replace with the actual currency code
+                        description: "Payment from my localhost", // replace with the actual description
+                        merchant_callback_url: "https://kc-test.netlify.app/?merchantOrderId=1234", // replace with the actual callback URL
+                        metadata: {
+                            product_id: "123" // replace with the actual metadata
+                        },
+                        payment_type: "nigerian" // replace with the actual payment type, if needed
+                    } ),
+                    success: function ( response ) {
+                        console.log( response ); // handle the successful response here
+                        alert( "Success" );
+
+                        $( ".response" ).text( response );
+                    },
+                    error: function ( xhr, status, error ) {
+                        console.log( xhr.responseText ); // handle the error response here
+                        alert( "Error" );
+                    }
+                } );
+            } );
+
+
+        } );
+    </script>
+
+
+
+</body>
+
+</html>
