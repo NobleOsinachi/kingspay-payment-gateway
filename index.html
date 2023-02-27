@@ -23,8 +23,11 @@
 
 
 
-    <script src="./jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
+
+    <input type="text " name="merchantOrder" />
 
     <script>
 
@@ -45,7 +48,7 @@
                         amount: "1000", // replace with the actual amount in KOBE/CENTS
                         currency: "NGN", // replace with the actual currency code
                         description: "Payment from my localhost", // replace with the actual description
-                        merchant_callback_url: "https://kc-test.netlify.app/?merchantOrderId=1234", // replace with the actual callback URL
+                        merchant_callback_url: "https://kc-elbon.netlify.app/?merchantOrderId=1234", // replace with the actual callback URL
                         metadata: {
                             product_id: "123" // replace with the actual metadata
                         },
