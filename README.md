@@ -15,11 +15,13 @@ To get started with the project, you will need to follow the steps below:
 2.  Navigate to the project directory and install the required dependencies:
     
      `cd kingspay-payment-gateway`
+     
      `npm install`
     
 3.  Create a `.env` file in the root directory of the project and add your KingsPay API credentials:
     
     `KINGS_PAY_API_KEY=<your-kingspay-api-key>`
+    
     `KINGS_PAY_API_SECRET=<your-kingspay-api-secret>`
     
     Note: Replace `<your-kingspay-api-key>` and `<your-kingspay-api-secret>` with your actual KingsPay API key and secret.
