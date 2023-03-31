@@ -9,28 +9,22 @@ Getting Started
 To get started with the project, you will need to follow the steps below:
 
 1.  Clone this repository onto your local machine using the following command:
-    
-    bashCopy code
-    
+
     `git clone https://github.com/<your-username>/kingspay-payment-gateway.git`
     
 2.  Navigate to the project directory and install the required dependencies:
     
-    bashCopy code
-    
-    `cd kingspay-payment-gateway npm install`
+     `cd kingspay-payment-gateway`
+     `npm install`
     
 3.  Create a `.env` file in the root directory of the project and add your KingsPay API credentials:
     
-    makefileCopy code
-    
-    `KINGS_PAY_API_KEY=<your-kingspay-api-key> KINGS_PAY_API_SECRET=<your-kingspay-api-secret>`
+    `KINGS_PAY_API_KEY=<your-kingspay-api-key>`
+    `KINGS_PAY_API_SECRET=<your-kingspay-api-secret>`
     
     Note: Replace `<your-kingspay-api-key>` and `<your-kingspay-api-secret>` with your actual KingsPay API key and secret.
     
 4.  Start the development server:
-    
-    sqlCopy code
     
     `npm start`
     
