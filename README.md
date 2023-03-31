@@ -10,7 +10,7 @@ To get started with the project, you will need to follow the steps below:
 
 1.  Clone this repository onto your local machine using the following command:
 
-    `git clone https://github.com/<your-username>/kingspay-payment-gateway.git`
+    `git clone https://github.com/NobleOsinachi/kingspay-payment-gateway.git`
     
 2.  Navigate to the project directory and install the required dependencies:
     
