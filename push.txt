@@ -1,0 +1,9 @@
+git init
+
+git add . && git commit -m "initial commit"
+
+#git remote add origin  https://github.com/NobleOsinachi/kc-test
+
+git push origin master
+
+# Pushes the changes in your local repository up to the remote repository you specified as the origin
